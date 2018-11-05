@@ -1,0 +1,37 @@
+#server:
+#  port: 8080 #配置服务器端口
+#spring:
+#  thymeleaf:
+#    cache: false  #模板缓存
+#    check-template-location: true
+#    enabled: true
+#    encoding: UTF-8
+#    mode: LEGACYHTML5 #指定模板视图为LEGACYHTML5
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    servlet:
+#      content-type: text/html
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.jdbc.Driver
+#  cache:
+#    ehcache:
+#      config: cacheCfg/dev.xml #配置缓存管理文件
+#  servlet:
+#    multipart:
+#      max-file-size: "20MB"
+#      max-request-size: "100MB"
+#mybatis:
+#  configuration:
+#    cache-enabled: true #开启缓存
+#    map-underscore-to-camel-case: true #开启驼峰命名
+#    lazy-loading-enabled: true #全局懒加载配置
+#    default-statement-timeout: 3000 #语句查询超时时间
+#    default-executor-type: simple #配置和设置执行器
+#    use-generated-keys: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #sql语句输出到控制台配置
+#  mapper-locations: classpath*:mapper/*/*.xml
+#  type-aliases-package: com.example.demo.*.pojo
+#debug: true
